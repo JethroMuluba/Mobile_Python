@@ -1,16 +1,13 @@
-# This is a sample Python script.
+from kivy.core.window import Window
+from kivymd.app import MDApp
+from kivy.lang import Builder
+Window.size = (370, 700)
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+class MainApp(MDApp):
+    # Build est le point d'entrer de l'application
+    def build(self):
+        
+        # Lier l'élément graphique à Python
+        return Builder.load_file("main.kv")
+app=MainApp()
+app.run()
