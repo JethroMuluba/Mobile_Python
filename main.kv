@@ -1,3 +1,28 @@
-MDFloatLayout:
-    md_bg_color: "white"
+#: include User/Intro/Intro.kv
+#: include User/Login/Login.kv
+#: include Students/Students_List/Students_List.kv
 
+
+#: import IntroScreen User.Intro.Intro_Screen.IntroScreen
+#: import LoginScreen User.Login.Login_Screen.LoginScreen
+#: import StudentsListScreen Students.Students_List.Students_List.StudentsListScreen
+
+#: import utils kivy.utils
+
+
+<WindowManager>:
+#Manage All Windows
+
+    id: screen_manager
+    screen_manager: screen_manager
+
+    MDScreen:
+        md_bg_color: "white"
+        MDLabel:
+            text: "Welcome"
+            halign: "center"
+            font_size: "100sp"
+
+
+    MDScreen:
+    MDScreen:
