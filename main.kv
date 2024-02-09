@@ -5,7 +5,7 @@
 
 #: import IntroScreen User.Intro.Intro_Screen.IntroScreen
 #: import LoginScreen User.Login.Login_Screen.LoginScreen
-#: import StudentsListScreen Students.Students_List.Students_List.StudentsListScreen
+#: import StudentsListScreen Students.Students_List.Students_List_Screen.StudentsListScreen
 
 #: import utils kivy.utils
 
@@ -16,13 +16,18 @@
     id: screen_manager
     screen_manager: screen_manager
 
-    MDScreen:
-        md_bg_color: "white"
-        MDLabel:
-            text: "Welcome"
-            halign: "center"
-            font_size: "100sp"
+    IntroScreen:
+        manager: screen_manager
+        name:"home"
 
 
-    MDScreen:
-    MDScreen:
+    LoginScreen:
+        manager: screen_manager
+        name: "login"
+
+
+
+    StudentsListScreen:
+        manager: screen_manager
+        name: "student"
+

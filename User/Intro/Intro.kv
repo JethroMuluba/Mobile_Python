@@ -1,0 +1,32 @@
+<IntroScreen>:
+    MDFloatLayout:
+        md_bg_color: utils.get_color_from_hex("#219ebc")
+        MDBoxLayout:
+            orientation: "vertical"
+
+            Widget:
+
+            MDLabel:
+                text: "[b][size=60]Welcome[/size][/b]"
+                theme_text_color: "Custom"
+                text_color: utils.get_color_from_hex("#ffffff")
+                halign: "center"
+                markup: True
+                size_hint: 1, None
+                height: 65
+
+
+            Widget:
+                size_hint: None, None
+                height: 10
+
+            MDLabel:
+                text: "To ODC Class"
+                theme_text_color: "Custom"
+                text_color: utils.get_color_from_hex("#ffffff")
+                halign: "center"
+                size_hint: 1, None
+                height: 65
+
+            Widget:
+
