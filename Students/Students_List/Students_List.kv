@@ -9,6 +9,8 @@
             MDTopAppBarLeadingButtonContainer:
                 MDActionTopAppBarButton:
                     icon: "arrow-left-thin"
+                    on_release: root.go_back()
+
 
             MDTopAppBarTitle:
                 text: "Students List"
@@ -33,7 +35,9 @@
                 md_bg_color: utils.get_color_from_hex("#00ff0000")
                 size_hint: 1, None
                 height: 30
+                padding: dp(20)
                 id: label_id
+
             ScrollView:
                 MDList:
                     id: my_data_list

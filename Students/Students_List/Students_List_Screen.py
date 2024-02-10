@@ -20,7 +20,7 @@ class StudentsListScreen(MDScreen):
         return students
 
     def on_ready_page(self, *args):
-        self.ids.label_id.text = 'Students (0)'
+        self.ids.label_id.text = 'Students (50)'
         students = self.get_students()
         for data in students:
             ligne = MDListItem(
@@ -28,6 +28,9 @@ class StudentsListScreen(MDScreen):
                 MDListItemHeadlineText(text=data)
             )
             self.ids.my_data_list.add_widget(ligne)
+
+    def go_back(self):
+        self.manager.current = "login"
 
 
     def on_enter(self, *args):
