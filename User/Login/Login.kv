@@ -49,6 +49,7 @@
                 size_hint_x: None
                 width: "300dp"
                 pos_hint: {"center_x": .5, "center_y": .5}
+                on_text: root.tape_username(self.text)
 
                 MDTextFieldLeadingIcon:
                     icon: "account-circle"
@@ -75,6 +76,8 @@
                 size_hint_x: None
                 width: "300dp"
                 pos_hint: {"center_x": .5, "center_y": .5}
+                on_text: root.tape_password(self.text)
+
 
                 MDTextFieldLeadingIcon:
                     icon: "lock-check"
@@ -98,6 +101,8 @@
                 theme_width: "Custom"
                 size_hint: 1, 1
                 #width: "300dp"
+                on_release: root.connexion()
+
 
 
                 MDButtonText:
