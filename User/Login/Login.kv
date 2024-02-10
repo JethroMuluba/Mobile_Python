@@ -1,0 +1,44 @@
+<LoginScreen>
+    MDFloatLayout:
+        md_bg_color: utils.get_color_from_hex("#ffffff")
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: dp(20)
+
+            Widget:
+
+            Image:
+                source: "Assets/Images/social-network_11913738.png"
+                size_hint: 1, 0.5
+
+            Widget:
+                size_hint: None, None
+                height: 20
+
+            MDLabel:
+                text: "[b][size=40]Login here[/size][/b]"
+                theme_text_color: "Custom"
+                text_color: utils.get_color_from_hex("#219ebc")
+                #md_bg_color: "black"
+                halign: "center"
+                markup: True
+                size_hint: 1, None
+                height: 40
+
+            Widget:
+                size_hint: None, None
+                height: 10
+
+            MDLabel:
+                text: "To see your class, please login here"
+                theme_text_color: "Custom"
+                text_color: utils.get_color_from_hex("#219ebc")
+                #md_bg_color: "black"
+                halign: "center"
+                size_hint: 1, None
+                height: 20
+
+
+
+
+            Widget:
