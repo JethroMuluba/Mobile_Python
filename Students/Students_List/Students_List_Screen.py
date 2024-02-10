@@ -1,5 +1,6 @@
 from faker import Faker
 from kivy.clock import Clock
+from kivy.uix.screenmanager import SlideTransition, SwapTransition
 from kivymd.uix.list import MDListItem, MDListItemLeadingIcon, MDListItemHeadlineText
 from kivymd.uix.screen import MDScreen
 
@@ -30,6 +31,7 @@ class StudentsListScreen(MDScreen):
             self.ids.my_data_list.add_widget(ligne)
 
     def go_back(self):
+        self.manager.transition = SlideTransition(direction="right")
         self.manager.current = "login"
 
 

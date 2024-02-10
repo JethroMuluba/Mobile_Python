@@ -12,6 +12,7 @@ class IntroScreen(MDScreen):
     def go_to_next_screen(self,_):
         self.manager.transition = SlideTransition()
 
+
         self.manager.current = 'login'
 
 
