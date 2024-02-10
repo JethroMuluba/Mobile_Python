@@ -1,4 +1,5 @@
 <LoginScreen>
+
     MDFloatLayout:
         md_bg_color: utils.get_color_from_hex("#ffffff")
         MDBoxLayout:
@@ -30,13 +31,66 @@
                 height: 10
 
             MDLabel:
-                text: "To see your class, please login here"
+                text: "[size=16]To see your class, please login here[/size]"
                 theme_text_color: "Custom"
-                text_color: utils.get_color_from_hex("#219ebc")
+                text_color: utils.get_color_from_hex("#adb5bd")
                 #md_bg_color: "black"
                 halign: "center"
                 size_hint: 1, None
                 height: 20
+                markup: True
+
+            Widget:
+                size_hint: None, None
+                height: 30
+
+            MDTextField:
+                mode: "outlined"
+                size_hint_x: None
+                width: "300dp"
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+                MDTextFieldLeadingIcon:
+                    icon: "account-circle"
+                MDTextFieldHintText:
+                    text: "Your User Name"
+                    theme_text_color: "Custom"
+                    text_color_normal: utils.get_color_from_hex("#219ebc")
+                MDTextFieldHelperText:
+                    text: "Ex: JethroMuluba or Jethro_Muluba"
+                    mode: "on_focus"
+                    theme_text_color: "Custom"
+                    text_color_focus: utils.get_color_from_hex("#d90429")
+                MDTextFieldTrailingIcon:
+                    icon: "information"
+                #MDTextFieldMaxLengthText:
+                    #max_text_length: 10
+
+            Widget:
+                size_hint: None, None
+                height: 40
+
+            MDTextField:
+                mode: "outlined"
+                size_hint_x: None
+                width: "300dp"
+                pos_hint: {"center_x": .5, "center_y": .5}
+
+                MDTextFieldLeadingIcon:
+                    icon: "lock-check"
+                MDTextFieldHintText:
+                    text: "Your Password"
+                    theme_text_color: "Custom"
+                    text_color_normal: utils.get_color_from_hex("#219ebc")
+                MDTextFieldTrailingIcon:
+                    icon: "information"
+                MDTextFieldHelperText:
+                    text: "Password Required"
+                    mode: "on_focus"
+                    theme_text_color: "Custom"
+                    text_color_focus: utils.get_color_from_hex("#d90429")
+
+
 
 
 
