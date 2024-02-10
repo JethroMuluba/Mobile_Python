@@ -7,7 +7,7 @@ Window.size = (370, 700)
 class WindowManager(ScreenManager):
     def initial_route(self):
         self.transition = NoTransition()
-        self.current = "login"
+        self.current = "student"
 
 class MainApp(MDApp):
     # Build est le point d'entrer de l'application

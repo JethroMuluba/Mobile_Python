@@ -1,6 +1,46 @@
 <StudentsListScreen>
     MDFloatLayout:
         md_bg_color: utils.get_color_from_hex("#ffffff")
+
+
+        MDTopAppBar:
+            type: "small"
+            pos_hint: {"top":1}
+            MDTopAppBarLeadingButtonContainer:
+                MDActionTopAppBarButton:
+                    icon: "arrow-left-thin"
+
+            MDTopAppBarTitle:
+                text: "Students List"
+
+
+            MDTopAppBarTrailingButtonContainer:
+                MDActionTopAppBarButton:
+                    icon: "calendar"
+                MDActionTopAppBarButton:
+                    icon: "account-circle-outline"
+                MDActionTopAppBarButton:
+                    icon: "dots-vertical"
+
         MDBoxLayout:
+            pos_hint: {"top": 0.9}
             orientation: "vertical"
-            padding: dp(20)
+            #adaptive_height: True
+            #padding: dp()
+
+            MDLabel:
+                text: "Students (16)"
+                md_bg_color: utils.get_color_from_hex("#00ff0000")
+                size_hint: 1, None
+                height: 30
+                id: label_id
+            ScrollView:
+                MDList:
+                    id: my_data_list
+
+
+
+
+            #Widget:
+
+
